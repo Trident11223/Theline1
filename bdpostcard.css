@@ -1,0 +1,53 @@
+body {
+    height: 100dvh;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url(./backgroundimg2.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+
+p {
+    color: aliceblue;
+    margin: 0;
+}
+
+.firstDivCon {
+    margin: auto;
+}
+.firstDiv {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 400px;
+    background-color: inherit;
+    color: aliceblue;
+    
+}
+
+.firstDiv p {
+    margin-bottom: 30px;
+}
+
+.firstDiv a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.firstDiv a:active {
+    color: #36417B;
+}
+
+.dropdownMaincon {
+    display: flex;
+    margin-left: 720px;
+}
+
+.dropdownList {
+    /* display: none; */
+}
