@@ -1,10 +1,3 @@
-<!-- .yoriimg {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 80px;
-    border: 3px solid palevioletred;
-} -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +10,11 @@
             margin: 0 auto;
             background-color: pink;
             width: 100%;
-            
         }
         
         .MainContainer {
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 5%; /* Adjusted for smaller screens */
+            padding-right: 5%; /* Adjusted for smaller screens */
             margin-top: 3%;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: whitesmoke;
@@ -34,15 +26,16 @@
 
         .flexbox {
             display: flex;
-            gap: 40px;
+            flex-direction: column; /* Stack items on smaller screens */
+            gap: 20px; /* Reduced gap for smaller screens */
         }
 
         .yoriimg {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 80px;
-    border: 3px solid palevioletred;
-}
+            width: 100%; /* Make image responsive */
+            max-width: 900px; /* Limit max width */
+            border-radius: 80px;
+            border: 3px solid palevioletred;
+        }
 
         .flexbox div {
             font-size: 30px;
@@ -50,7 +43,21 @@
         }
 
         .yorivd {
-            width: 300px;
+            width: 100%; /* Make video responsive */
+            max-width: 300px; /* Limit max width */
+        }
+
+        /* Media Queries for responsiveness */
+        @media only screen and (min-width: 600px) {
+            .flexbox {
+                flex-direction: row; /* Switch back to row layout on larger screens */
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            .flexbox div {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
         }
     </style>
 </head>
@@ -66,15 +73,14 @@
             </div>
         </div>
 
-
         <div class="Container">
             <div class="flexbox">
                 <video src="./yorivd.mp4" controls class="yoriimg yorivd" loop></video>
                 <div>
-Even though we’re far apart right now, my love for you hasn’t changed it only grows stronger every day. I miss being by your side and seeing your beautiful smile, but I know that this distance is temporary. I can’t wait for the day when I can hold you close again and celebrate all the little moments we’ve missed. As you step into your 22nd year, I hope it’s filled with happiness, success, and everything your heart desires. You’re so special to me, and no matter where we are, you’ll always have my heart.<br><br><div>No matter the distance, my love for you remains unshaken. You are my happiness, my inspiration, and the most beautiful part of my life. As you celebrate this special day, know that my heart is with you, and I’m counting down the days until I can see you again. May this birthday be as incredible as you are, and may your 22nd year bring endless joy and success. I love you, always and forever.
-
-    With all my love,
-    Trym</div></div>
+                    Even though we’re far apart right now, my love for you hasn’t changed; it only grows stronger every day. I miss being by your side and seeing your beautiful smile, but I know that this distance is temporary. I can’t wait for the day when I can hold you close again and celebrate all the little moments we’ve missed. As you step into your 22nd year, I hope it’s filled with happiness, success, and everything your heart desires. You’re so special to me, and no matter where we are, you’ll always have my heart.<br><br>
+                    <div>No matter the distance, my love for you remains unshaken. You are my happiness, my inspiration, and the most beautiful part of my life. As you celebrate this special day, know that my heart is with you, and I’m counting down the days until I can see you again. May this birthday be as incredible as you are, and may your 22nd year bring endless joy and success. I love you, always and forever.</div>
+                    <div>With all my love, Trym</div>
+                </div>
             </div>
         </div>
     </div>
